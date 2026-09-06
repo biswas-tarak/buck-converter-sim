@@ -4,6 +4,8 @@ Buck converter simulation and characterization in PLECS
 
 This project models a DC-DC buck converter and investigates its steady-state behavior under different duty cycles. The simulation was used to verify the relationship between PWM duty cycle and output voltage, and to observe inductor current and output voltage ripple.
 
+![alt text](images/Buck_Converter.png)
+
 ## Converter Parameters
 
 | Parameter | Value |
@@ -25,6 +27,9 @@ The converter was tested at three different duty cycles.
 | 50% | ~5.003 V | 32.00 mV | ~0.501 A | 250.34 mA |
 | 75% | ~7.502 V | 23.49 mV | ~0.752 A | 186.90 mA |
 
+![alt text](images/Buck_Converter_Scope.png)
+*Top to bottom: comparator (gate signal) output, inductor current, and output voltage*
+
 The results show the expected approximately linear relationship between duty cycle and average output voltage for the buck converter.
 
 ## Key Concepts Demonstrated
@@ -42,4 +47,4 @@ The results show the expected approximately linear relationship between duty cyc
 
 ## Project Files
 
-`Buck_Converter.plecs` — Complete PLECS simulation model.
+[`Buck_Converter.plecs`](Buck_Converter.plecs) — Complete PLECS simulation model
